@@ -1,0 +1,26 @@
+\contentsline {section}{\numberline {1}Introduction}{2}% 
+\contentsline {subsection}{\numberline {1.1}What is a Taylor Series?}{2}% 
+\contentsline {subsection}{\numberline {1.2}Power of Taylor Series}{3}% 
+\contentsline {section}{\numberline {2}Finding a Taylor Series for \(\pi \)}{6}% 
+\contentsline {subsection}{\numberline {2.1}Deriving a Taylor Series for arctan(x)}{9}% 
+\contentsline {subsection}{\numberline {2.2}Constructing a series representation for \(\pi \)}{10}% 
+\contentsline {section}{\numberline {3}Alternating Series Test}{10}% 
+\contentsline {subsection}{\numberline {3.1}Nth Term Test}{11}% 
+\contentsline {subsection}{\numberline {3.2}Terms are non-increasing}{11}% 
+\contentsline {section}{\numberline {4}Absolute Convergence}{11}% 
+\contentsline {subsection}{\numberline {4.1}Testing for absolute convergence}{11}% 
+\contentsline {subsection}{\numberline {4.2}Using the Ratio Test}{12}% 
+\contentsline {subsection}{\numberline {4.3}Checking the bounds}{13}% 
+\contentsline {section}{\numberline {5}Finding Error of Approximations}{13}% 
+\contentsline {subsection}{\numberline {5.1}Alternating Series Remainder}{14}% 
+\contentsline {subsection}{\numberline {5.2}Ti-83 and Wolfram Alpha's Approximation of \(\pi \)}{16}% 
+\contentsline {subsection}{\numberline {5.3}More reasonable approximations}{17}% 
+\contentsline {section}{\numberline {6}Related Rates Problem}{17}% 
+\contentsline {subsection}{\numberline {6.1}Modeling the toilet}{17}% 
+\contentsline {subsection}{\numberline {6.2}Finding the rate of change of volume}{18}% 
+\contentsline {subsection}{\numberline {6.3}Solving the related rate}{19}% 
+\contentsline {section}{\numberline {7}Comparison between terms and Ti-83}{21}% 
+\contentsline {section}{\numberline {8}Evaluation}{21}% 
+\contentsline {section}{\numberline {9}Exploration}{21}% 
+\contentsline {section}{\numberline {A}Appendix}{22}% 
+\contentsline {section}{\numberline {B}Works Cited}{23}% 
