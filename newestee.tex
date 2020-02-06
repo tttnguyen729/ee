@@ -10,7 +10,6 @@
 \usepackage{float}
 \usepackage{url}
 
-\author{hyg172}
 \date{Session: May 2020 \\ Subject: Mathematics \\ Word Count: 3328}
 \title{The Application of a Taylor Series Approximation for \(\pi\) in a Related Rates Problem using a Solid of Revolution \bigskip \\  How well can Taylor series approximations for pi be applied in rates of change of cyclical objects?}
 
@@ -25,7 +24,7 @@ Irrational numbers like \(\pi\) have been approximated ever since they've been f
 As a young child, I was always interested in irrational numbers like pi and the square root of two. In my IB mathematics class, I learned that although irrational numbers have never ending decimals that don't even repeat, that they can be approximated using series. I was simply confounded by the idea that adding an endless amount of numbers could result in a finite number, much less an irrational number. My first meanvingful interaction with a toilet was when I pondered about the curvature of a toilet. I hypothesized that there was no way the volume of the toilet could be a whole number, yet humans are able to make them nonetheless. This led me to the investigation of approximating curves using Taylor series and to the research question: How well can Taylor series approximations for pi be applied in rates of change of cyclical objects?
 
 \subsection{What is a Taylor Series?}
-A Taylor series is an approximation method that can be used to approximate functions and irrational numbers. According to Ron Larson, If a function f has derivatives of all orders at x = c, then the Taylor series for f at c is: (Larson 613)
+A Taylor series is an approximation method that can be used to approximate functions and irrational numbers. According to Ron Larson, if a function f has derivatives of all orders at x = c, then the Taylor series for f at c is: (Larson 613)
 \begin{equation}
   \sum_{n=0}^{\infty} \frac{f^{(n)}(c)}{n!} \, (x-c)^{n} = f(c) + f'(c)(x-c) + ... +  \frac{f^{(n)}(c)}{n!}
 \end{equation}
@@ -233,7 +232,7 @@ Simplifying by combining like terms
   \frac{d}{dx} tany = \frac{cos^{2}(y) + sin^{2}(y)}{cos^{2}(y)}
 \end{equation}
 
-Although it is possible to use Pythagoreom's identity to further simplify \(cos^{2}(y) + sin^{2}(y) = 1\) to get \(\dfrac{1}{cos^{2}(y)} = sec^{2}(y)\), simplifying by splitting into two fractions will be used instead. 
+Although it is possible to use Pythagorean's identity to further simplify \(cos^{2}(y) + sin^{2}(y) = 1\) to get \(\dfrac{1}{cos^{2}(y)} = sec^{2}(y)\), simplifying by splitting into two fractions will be used instead. 
 \begin{equation}
   \frac{d}{dx} tany = 1 + tan^{2}(y)
 \end{equation}
@@ -340,10 +339,10 @@ Solving for pi.
     \pi = 4 \sum_{n=0}^\infty{ \frac{(-1)^n}{2n+1} = 4 - \frac{4}{3} + \frac{8}{5} - \frac{4}{7} + ... }
 \end{equation}
 
-According to Hlawitschka, Taylor series may not be accurate or even be erroneous if the series diverges. (Hlawitschka) Christine Palmer claims that ``In practice the Taylor series does converge to the function for most functions of interest, so that the Taylor series for a function is an excellent way to work that function." (Palmer) Even so, as per Hlawitschka, it is necessary to prove that the Taylor series representation of arctan(x) is convergent by using the Alternating Series Test.
+According to Hlawitschka, Taylor series may not be accurate or even be erroneous if the series diverges (Hlawitschka). Christine Palmer claims that ``In practice the Taylor series does converge to the function for most functions of interest, so that the Taylor series for a function is an excellent way to work that function" (Palmer). Even so, as per Hlawitschka, it is necessary to prove that the Taylor series representation of arctan(x) is convergent by using the Alternating Series Test.
 
 \section{Alternating Series Test}
-The alternating series test will be used to see if the series for arctan(x) is convergent. According to Ron Larson, an alternating series converges when the two conditions listed below are met. (Larson 567)
+The alternating series test will be used to see if the series for arctan(x) is convergent. According to Ron Larson, an alternating series converges when the two conditions listed below are met (Larson 567).
 
 First, the limit of the nth term must equal zero.
 \begin{equation}
@@ -376,7 +375,7 @@ The definition of absolute convergence will determine whether the series derived
 
 According to Ron Larson, absolute convergence is defined as: 
 
-``The series \(\sum a_{n}\) is absolutely convergent when \(\sum \abs{a_{n}}\) converges." (Larson 570)
+``The series \(\sum a_{n}\) is absolutely convergent when \(\sum \abs{a_{n}}\) converges" (Larson 570).
 
 \subsection{Testing for absolute convergence}
 The series derived for arctan(x).
@@ -404,7 +403,7 @@ The series derived for arctan(x).
     \sum_{n=0}^{\infty} (-1)^{n} \frac{x^{2n+1}}{2n+1}
 \end{equation}
  
-The Ratio Test is a limit test of the ratio between the n + 1 term and the nth term which allows testing for convergence. If L < 1, then the series converges absolutely. If L > 1, then the series is divergent and if L = 1, then the test is inconclusive.
+The Ratio Test is a limit test of the ratio between the n + 1 term and the nth term which allows testing for convergence. If \(L < 1\), then the series converges absolutely. If \(L > 1\), then the series is divergent and if L = 1, then the test is inconclusive.
 \begin{equation}
     L = \lim_{n \to \infty} \left |\frac{a_{n+1}}{a_{n}} \right | < 1
 \end{equation}
@@ -460,8 +459,8 @@ These both pass the alternating series test as the limit of their nth term is ze
 \section{Finding Error of Approximations}
 The more accurate an approximation needs to be, the more terms will be needed in the Taylor polynomial. However, this is a more difficult task than just plugging in values into the derived Taylor polynomial because the goal is to figure out just how accurate or long the Taylor polynomial needs to be to reach a certain level of accuracy.
 
-According to Christine Palmer, ``f(x) = Tn(x) + Rn(x)" where Tn(x) is the approximation and Rn(x) is the error. (Palmer) However, this is not valuable because solving for Rn(x) directly would not be beneficial because f(x) is irrational.
-According to Calculus for AP, ``If a convergent alternating series satisfies the condition \(a_{n+1} \leq a_{n} \), then the absolute value of the remainder \(R_{n}\) involved in approximating the sum S by \(S_{n}\) is less than (or equal to) the first neglected term." (Larson 569)
+According to Christine Palmer, ``f(x) = Tn(x) + Rn(x)" where Tn(x) is the approximation and Rn(x) is the error (Palmer). However, solving for Rn(x) directly would not be beneficial because f(x) is irrational.
+According to Calculus for AP, ``If a convergent alternating series satisfies the condition \(a_{n+1} \leq a_{n} \), then the absolute value of the remainder \(R_{n}\) involved in approximating the sum S by \(S_{n}\) is less than (or equal to) the first neglected term" (Larson 569).
 
 That is:
 \begin{equation}
@@ -595,7 +594,7 @@ A toilet bowl is being filled with water at a constant rate of \(0.968 L/s\). At
     \caption{The toilet examined.}
 \end{figure}
 
-As noted earlier, flushing the toilet causes the rate of water flowing into the toilet to spike initially, then gradualy slowing down, until no more water flows into the toilet. However, for the sake of the related rates problem, a constant flush rate will be assumed as the priority is to apply our approximation to a real life problem, and not to answer the problem itself.. It is also important to note that the volume of the toilet is not completely filled with water.  
+As noted earlier, flushing the toilet causes the rate of water flowing into the toilet to spike initially, then gradualy slowing down, until no more water flows into the toilet. However, for the sake of the related rates problem, a constant flush rate will be assumed as the priority is to apply our approximation to a real life problem. It is also important to note that the volume of the toilet is not completely filled with water.  
 
 The graph of \(x^{2}\) will be used to model the curvature of the toilet and the cross section of the toilet bowl. More specifically, the solid of revolution around the y axis will create a toilet shaped bowl. 
 
@@ -735,7 +734,7 @@ Plugging the equation into a calculator produces the result:
 \end{center}
 
 \section{Evaluation}
-According to Ron Larson, “this series (developed by James Gregory in 1671) is not a practical way of approximating \(\pi\) because it converges so slowly that hundreds of terms would have to be used to obtain reasonable accuracy.” (Larson 609) In fact, it was derived that 199 terms are required to be as accurate as 3.14 and requires almost two billion terms to even come close to beating a Ti-83’s accuracy. This is just not feasible to do without the aid of technology. Moreover, it was necessary to use technology to quantify how many terms would be needed to beat the Ti-83’s approximation.
+According to Ron Larson, “this series (developed by James Gregory in 1671) is not a practical way of approximating \(\pi\) because it converges so slowly that hundreds of terms would have to be used to obtain reasonable accuracy” (Larson 609). In fact, it was derived that 199 terms are required to be as accurate as 3.14 and requires almost two billion terms to even come close to beating a Ti-83’s accuracy. This is just not feasible to do without the aid of technology. Moreover, it was necessary to use technology to quantify how many terms would be needed to beat the Ti-83’s approximation.
 \section{Exploration}
 Although the Taylor series found is not practical for approximating \(\pi\) for everyday use. There are lots of other series that can be used to approximate \(\pi\). 
 
@@ -748,7 +747,7 @@ According to Wolfram Alpha, there are series that even converge directly to \(\p
     \pi = \sum_{k=0}^{\infty} \frac{2(-1)^{k} \; 3^{1/2-k}}{{2k+1}}
 \end{equation}
 
-These function functions, although more accurate than the Gregory-Leibniz series used in the research investigation, were not used due to their complexity. The first series requires knowledge on the Riemann zeta function and the second due to the complexity of its derivation.
+These function functions, although more accurate than the Gregory-Leibniz series used in the research investigation, were not used due to their complexity. The first series requires knowledge on the Riemann zeta function and the second was not used due to the complexity of its derivation.
 
 Word Count: 3328
 
