@@ -19,12 +19,12 @@
 \newpage
 
 \section{Introduction}
-Irrational numbers like \(\pi\) have been approximated ever since they've been first discovered. Nowadays, mathemticians have become so dependent on technology, that they have taken for granted the ease of which they can approximate irrational numbers. Modern calculators have made it a lot easier to approximate irrational numbers like e and \(\pi\). However, when mathemticians rely on technology to do their calculations, they are limited to the accuracy of said technology. For example, a Ti-83 calculator can only approximate \(\pi\) to 9 decimal places, ``3.141592654". If a better approximation is necessary, a more accurate calculator would be required to solve the problem. Often overlooked approximation methods can be just as accurate as a calculator, and have the potential benefit of being modified to manipulate accuracy as necessary.
+Irrational numbers like \(\pi\) have been approximated ever since they've been first discovered. Nowadays, mathemticians have become so dependent on technology, that they have taken for granted the ease of which they can approximate irrational numbers. Modern calculators have made it a lot easier to approximate irrational numbers like e and \(\pi\). However, when mathemticians rely on technology to do their calculations, they are limited to the accuracy of said technology. For example, a Ti-83 calculator can only approximate \(\pi\) to 9 decimal places, 3.141592654. If a better approximation is necessary, a more accurate calculator would be required to solve the problem. Often overlooked approximation methods can be just as accurate as a calculator, and have the potential benefit of being modified to manipulate accuracy as necessary.
 
 As a young child, I was always interested in irrational numbers like pi and the square root of two. In my IB mathematics class, I learned that although irrational numbers have never ending decimals that don't even repeat, that they can be approximated using series. I was simply confounded by the idea that adding an endless amount of numbers could result in a finite number, much less an irrational number. My first meanvingful interaction with a toilet was when I pondered about the curvature of a toilet. I hypothesized that there was no way the volume of the toilet could be a whole number, yet humans are able to make them nonetheless. This led me to the investigation of approximating curves using Taylor series and to the research question: How well can Taylor series approximations for pi be applied in rates of change of cyclical objects?
 
 \subsection{What is a Taylor Series?}
-A Taylor series is an approximation method that can be used to approximate functions and irrational numbers. According to Ron Larson, if a function f has derivatives of all orders at x = c, then the Taylor series for f at c is: (Larson 613)
+A Taylor series is an approximation method that can be used to approximate functions and irrational numbers. According to Ron Larson, ``if a function f has derivatives of all orders at x = c, then the Taylor series for f at c is": (Larson 2017, 613)
 \begin{equation}
   \sum_{n=0}^{\infty} \frac{f^{(n)}(c)}{n!} \, (x-c)^{n} = f(c) + f'(c)(x-c) + ... +  \frac{f^{(n)}(c)}{n!}
 \end{equation}
@@ -339,10 +339,10 @@ Solving for pi.
     \pi = 4 \sum_{n=0}^\infty{ \frac{(-1)^n}{2n+1} = 4 - \frac{4}{3} + \frac{8}{5} - \frac{4}{7} + ... }
 \end{equation}
 
-According to Hlawitschka, Taylor series may not be accurate or even be erroneous if the series diverges (Hlawitschka). Christine Palmer claims that ``In practice the Taylor series does converge to the function for most functions of interest, so that the Taylor series for a function is an excellent way to work that function" (Palmer). Even so, as per Hlawitschka, it is necessary to prove that the Taylor series representation of arctan(x) is convergent by using the Alternating Series Test.
+According to Hlawitschka, Taylor series may not be accurate or even be erroneous if the series diverges (Hlawitschka). Christine Palmer claims that ``In practice the Taylor series does converge to the function for most functions of interest, so that the Taylor series for a function is an excellent way to work that function" (Palmer 1998). Even so, as per Hlawitschka, it is necessary to prove that the Taylor series representation of arctan(x) is convergent by using the Alternating Series Test.
 
 \section{Alternating Series Test}
-The alternating series test will be used to see if the series for arctan(x) is convergent. According to Ron Larson, an alternating series converges when the two conditions listed below are met (Larson 567).
+The alternating series test will be used to see if the series for arctan(x) is convergent. According to Ron Larson, an alternating series converges when the two conditions listed below are met (Larson 2017, 567).
 
 First, the limit of the nth term must equal zero.
 \begin{equation}
@@ -375,7 +375,7 @@ The definition of absolute convergence will determine whether the series derived
 
 According to Ron Larson, absolute convergence is defined as: 
 
-``The series \(\sum a_{n}\) is absolutely convergent when \(\sum \abs{a_{n}}\) converges" (Larson 570).
+``The series \(\sum a_{n}\) is absolutely convergent when \(\sum \abs{a_{n}}\) converges" (Larson 2017, 570).
 
 \subsection{Testing for absolute convergence}
 The series derived for arctan(x).
@@ -396,7 +396,7 @@ In other words, it is necessary to test if the non alternating part is convergen
 This behaves like the harmonic series \(\sum\limits_{n=0}^{\infty} \dfrac{1}{n}\) which is divergent. Therefore the alternating series for arctan(x) is not absolutely convergent. This means that it is necessary to check the interval convergence to determine if the series can be used to approximate pi at x = 1 by checking if x = 1 falls into the interval in which the series representation of arctan(x) converges.
 
 \subsection{Using the Ratio Test}
-The ratio test will be used to determine the interval of convergence. The interval of convergence is ``the set of real numbers x for which a power series converges" (Strang 6). This helps determine if the series is convergent at x = 1.
+The ratio test will be used to determine the interval of convergence. The interval of convergence is ``the set of real numbers x for which a power series converges" (Strang 2016, 6). This helps determine if the series is convergent at x = 1.
 
 The series derived for arctan(x).
 \begin{equation}
@@ -459,7 +459,7 @@ These both pass the alternating series test as the limit of their nth term is ze
 \section{Finding Error of Approximations}
 The more accurate an approximation needs to be, the more terms will be needed in the Taylor polynomial. However, this is a more difficult task than just plugging in values into the derived Taylor polynomial because the goal is to figure out just how accurate or long the Taylor polynomial needs to be to reach a certain level of accuracy.
 
-According to Christine Palmer, ``f(x) = Tn(x) + Rn(x)" where Tn(x) is the approximation and Rn(x) is the error (Palmer). However, solving for Rn(x) directly would not be beneficial because f(x) is irrational.
+According to Christine Palmer, ``f(x) = Tn(x) + Rn(x)" where Tn(x) is the approximation and Rn(x) is the error (Palmer 1998). However, solving for Rn(x) directly would not be beneficial because f(x) is irrational.
 According to Calculus for AP, ``If a convergent alternating series satisfies the condition \(a_{n+1} \leq a_{n} \), then the absolute value of the remainder \(R_{n}\) involved in approximating the sum S by \(S_{n}\) is less than (or equal to) the first neglected term" (Larson 569).
 
 That is:
