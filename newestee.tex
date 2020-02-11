@@ -20,7 +20,7 @@
 \newpage
 
 \section{Introduction}
-Irrational numbers like \(\pi\) have been approximated ever since they've been first discovered. Nowadays, mathemticians have become so dependent on technology, that they have taken for granted the ease of which they can approximate irrational numbers. Modern calculators have made it a lot easier to approximate irrational numbers like e and \(\pi\). However, when mathemticians rely on technology to do their calculations, they are limited to the accuracy of said technology. For example, a Ti-83 calculator can only approximate \(\pi\) to 9 decimal places, 3.141592654. If a better approximation is necessary, a more accurate calculator would be required to solve the problem. Often overlooked approximation methods can be just as accurate as a calculator, and have the potential benefit of being modified to manipulate accuracy as necessary.
+Irrational numbers like \(\pi\) have been approximated ever since they've been first discovered. Nowadays, mathematicians have become so dependent on technology, that they have taken for granted the ease of which they can approximate irrational numbers. Modern calculators have made it a lot easier to approximate irrational numbers like e and \(\pi\). However, when mathematicians rely on technology to do their calculations, they are limited to the accuracy of said technology. For example, a Ti-83 calculator can only approximate \(\pi\) to 9 decimal places, 3.141592654. If a better approximation is necessary, a more accurate calculator would be required to solve the problem. Often overlooked approximation methods can be just as accurate as a calculator, and have the potential benefit of being modified to manipulate accuracy as necessary.
 
 As a young child, I was interested in irrational numbers like \(\pi\) and \(\sqrt{2}\). In my IB mathematics class, I learned that although irrational numbers have never-ending decimals that do not repeat, that they can be approximated using series. I was confounded by the idea that adding an endless amount of numbers could result in a finite number, much less an irrational number. My first meaningful interaction with a toilet was when I pondered about the curvature of a toilet. I hypothesized that there was no way the volume of the toilet could be a whole number, yet humans are able to make them nonetheless. This led me to the investigation of approximating curves using Taylor series and to the research question: How well can Taylor series approximations for \(pi\) be applied in rates of change of cyclical objects?
 
@@ -32,7 +32,7 @@ A Taylor series is an approximation method that can be used to approximate funct
 
 It is possible to apply this formula where f(n) is the nth derivative to derive the Taylor series for arctan(x) to approximate \(\pi\).
 
-To demonstrate the utility of approximating with Talor series, the paper will explore the calculations of the volume and rate of water flowing into a toilet bowl. Firstly, rotating a parabola into a solid of revolution will be used to model the structure of the bowl. In this way, manipulation of the upper bound of integration will allow the volume of this bowl to somewhat resemble that of a curved toilet bowl. It is important to note that a normal toilet bowl's structure is not perfectly parabolic. However, this model will defy standard conventions for simplicity. I predict that using a Taylor series will prove to be very accurate and easy to calculate by hand for approximating \(pi\). 
+To demonstrate the utility of approximating with Taylor series, the paper will explore the calculations of the volume and rate of water flowing into a toilet bowl. Firstly, rotating a parabola into a solid of revolution will be used to model the structure of the bowl. In this way, manipulation of the upper bound of integration will allow the volume of this bowl to somewhat resemble that of a curved toilet bowl. It is important to note that a normal toilet bowl's structure is not perfectly parabolic. However, this model will defy standard conventions for simplicity. I predict that using a Taylor series will prove to be very accurate and easy to calculate by hand for approximating \(pi\). 
 
 \subsection{Power of Taylor Series}
 Taylor series can turn transcendental numbers into polynomials. This is revolutionary as numbers like \(e\) and \(\pi\) can be viewed not only as irrational numbers, but also as algebraic functions.
@@ -61,7 +61,7 @@ The series was derived from the general formula of a Taylor series.
   \sum_{n=0}^{\infty} \frac{f^{(n)}(c)}{n!} \, (x-c)^{n} = f(c) + f'(c)(x-c) + ... +  \frac{f^{(n)}(c)}{n!}
 \end{equation*}
 
-``Centering the Taylor series at the point c = 0 results in a Macluarin series" (Larson 2017, 586). Since the derivative of \(e^{x}\) is \(e^{x}\), \(f^{(n)}(0)\) is always equal to 1.
+``Centering the Taylor series at the point c = 0 results in a Maclaurin series" (Larson 2017, 586). Since the derivative of \(e^{x}\) is \(e^{x}\), \(f^{(n)}(0)\) is always equal to 1.
 
 The series simplifies to:
 \begin{equation*}
@@ -130,7 +130,7 @@ Using a third order approximation of P(3) = 1 + x + \(\dfrac{x^{2}}{2!}\) + \(\d
 An 8 term approximation is strikingly similar to the graph of \(y = e^{x}\)
 \begin{figure}[H]
 \centering
-    \caption[]{\(y=e^x\) and eigth order approximation}
+    \caption[]{\(y=e^x\) and eighth order approximation}
 \begin{tikzpicture}
 \begin{axis}
     [xmin=-5,
@@ -213,7 +213,7 @@ To calculate the derivative of tan(y), a trigonometric identity is used to first
  tan(y) = \frac{sin(y)}{cos(y)}
 \end{equation*}
 
-Applying the diferential operator on both sides.
+Applying the differential operator on both sides.
 \begin{equation*}
   \frac{d}{dx} tany = \frac{d}{dx} \frac{sin(y)}{cos(y)}
 \end{equation*}
@@ -377,7 +377,7 @@ According to Ron Larson, absolute convergence is defined as:
 ``The series \(\sum a_{n}\) is absolutely convergent when \(\sum \abs{a_{n}}\) converges" (Larson 2017, 570).
 
 \subsection{Testing for absolute convergence}
-The series derived for arctan(x).
+The series derived for arctan(x):
 \begin{equation*}
     \sum_{n=0}^{\infty} (-1)^{n} \frac{x^{2n+1}}{2n+1}
 \end{equation*}
@@ -426,7 +426,7 @@ Simplifying and taking \(x^{2}\) out of the limit,
     x^{2} < 1
 \end{equation*}
 
-As shown previously, the series is convergent within \(-1 < x < 1\), however it is still necessary to check the bounds for convergence. If the series proves to not converge at x=1, then the series is not a good predictor of \(\pi\) as the appproximation relies on the fact that \(arctan(1) = \pi/4\).
+As shown previously, the series is convergent within \(-1 < x < 1\), however it is still necessary to check the bounds for convergence. If the series proves to not converge at x=1, then the series is not a good predictor of \(\pi\) as the approximation relies on the fact that \(arctan(1) = \pi/4\).
 
 \subsection{Checking the bounds}
 \begin{equation*}
@@ -570,7 +570,7 @@ and the next unused term is
 n = 2000000000
 \end{verbatim}
 
-A Taylor series approximation would need almost 2 billion terms to beat the Ti-83's approximation of \(\pi\), rendering it impossibile to calculate using the Taylor series at this level of accuracy. In this way, although a Taylor series approximation of \(\pi\) can substitute technology for basic calculations, it is not as effective as basic technology like a Ti-83 calculator. The difficulty in using Taylor series is not only determing how many terms are needed but adding their partial sum. Since the Taylor series converges so slowly, more terms are required to reach a certain level of accuracy. Without the aid of technology, a Taylor series would only be feasible to use with a limited number of terms.
+A Taylor series approximation would need almost 2 billion terms to beat the Ti-83's approximation of \(\pi\), rendering it impossible to calculate using the Taylor series at this level of accuracy. In this way, although a Taylor series approximation of \(\pi\) can substitute technology for basic calculations, it is not as effective as basic technology like a Ti-83 calculator. The difficulty in using Taylor series is not only determining how many terms are needed but adding their partial sum. Since the Taylor series converges so slowly, more terms are required to reach a certain level of accuracy. Without the aid of technology, a Taylor series would only be feasible to use with a limited number of terms.
 
 The Wolfram Alpha approximation for \(\pi\) is accurate to 57 decimal places:
 3.141592653589793238462643383279502884197169399375105820974
@@ -594,7 +594,7 @@ A toilet bowl is being filled with water at a constant rate of \(0.968 L/s\). At
     \caption{The toilet examined.}
 \end{figure}
 
-As noted earlier, flushing the toilet causes the rate of water flowing into the toilet to spike initially, then gradualy slowing down, until no more water flows into the toilet. However, for the sake of the related rates problem, a constant flush rate will be assumed as the priority is to apply our approximation to a real life problem. It is also important to note that the volume of the toilet is not completely filled with water.  
+As noted earlier, flushing the toilet causes the rate of water flowing into the toilet to spike initially, then gradually slowing down, until no more water flows into the toilet. However, for the sake of the related rates problem, a constant flush rate will be assumed as the priority is to apply our approximation to a real life problem. It is also important to note that the volume of the toilet is not completely filled with water.  
 
 The graph of \(x^{2}\) will be used to model the curvature of the toilet and the cross section of the toilet bowl. More specifically, the solid of revolution around the y axis will create a toilet shaped bowl. 
 
@@ -657,7 +657,7 @@ Flush & Time (s \(\pm\) 0.01s)\\
 \end{tabular}
 \end{center}
 
-The average of the time for these 20 flushes is 15.50 seconds. 
+The average time for these 20 flushes is 15.50 seconds. 
 
 To keep units between height and volume similar, volume in liters will be converted to cubic centimeters.
 \begin{equation*}
@@ -691,7 +691,7 @@ Substituting in our approximation of \(\pi\) and simplifying.
   \frac{dV}{dt} \approx \sum_{n=0}^{199}{\frac{(-1)^n}{2n+1}}  \cdot 6y^{2} \,\frac{dy}{dt}
 \end{equation*}
 
-It is true that normal toilets do not flush at a constant rate. Nonetheless,  a constant rate of 851.613 \(\dfrac{cm^{3}}{sec}\) that was derived from averaging the time it takes a toilet to flush will be assume. The rate at which the water's height is increasing at the instant y = 2 cm will be found.
+It is true that normal toilets do not flush at a constant rate. Nonetheless,  a constant rate of 851.613 \(\dfrac{cm^{3}}{sec}\) that was derived from averaging the time it takes a toilet to flush will be assumed. The rate at which the water's height is increasing at the instant y = 2 cm will be found.
 
 Solving for dy/dt.
 \begin{equation*}
