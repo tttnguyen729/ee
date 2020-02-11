@@ -8,7 +8,8 @@
 \usepackage{physics}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage{url}
+\usepackage[hyphens,spaces,obeyspaces]{url}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
 
 \date{\normalsize May 2020 \\ Mathematics \\ Word Count: 3328}
 \title{\normalsize The Application of a Taylor Series Approximation for \(\pi\) in a Related Rates Problem using a Solid of Revolution. \bigskip \\  How well can Taylor series approximations for \(\pi\) be applied in rates of change of cyclical objects?}
@@ -182,7 +183,7 @@ f'(x) = \frac{1}{1 + x^{2}}
 \end{equation*}
 
 \pagebreak
-The derivative of arctan(x) can be derived with the following triangle using basic trigonometry and calculus:
+According to Jerison, the derivative of arctan(x) can be derived with the following triangle using basic trigonometry and calculus (Jerison 2006).
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
@@ -337,7 +338,7 @@ Solving for \(\pi\).
     \pi = 4 \sum_{n=0}^\infty{ \frac{(-1)^n}{2n+1} = 4 - \frac{4}{3} + \frac{8}{5} - \frac{4}{7} + ... }
 \end{equation*}
 
-According to Hlawitschka, Taylor series may not be accurate or even be erroneous if the series diverges (Hlawitschka). Christine Palmer claims that ``In practice the Taylor series does converge to the function for most functions of interest, so that the Taylor series for a function is an excellent way to work that function" (Palmer 1998). Even so, as per Hlawitschka, it is necessary to prove that the Taylor series representation of arctan(x) is convergent by using the Alternating Series Test. If the series is not convergent at \(x = 1\), then the series will not be a good approximation for \(\pi\).
+According to Loistl, Taylor series may not be accurate or even be erroneous if the series diverges (Loistl 1976). Christine Palmer claims that ``In practice the Taylor series does converge to the function for most functions of interest, so that the Taylor series for a function is an excellent way to work that function" (Palmer 1998). Even so, as per Loistl, it is necessary to prove that the Taylor series representation of arctan(x) is convergent by using the Alternating Series Test. If the series is not convergent at \(x = 1\), then the series will not be a good approximation for \(\pi\).
 
 \section{Alternating Series Test}
 The alternating series test will be used to test if the series for arctan(x) is convergent. According to Ron Larson, an alternating series converges when the two conditions listed below are met (Larson 2017, 567).
@@ -772,19 +773,29 @@ unused term is n = %d" % (n-2, n-1))
 \end{verbatim}
 \end{appendix}
 
-\pagebreak
-\section{Works Cited}
+\newpage
+\begin{thebibliography}{thewidest}
+\bibitem{Jerison2006}
+  Jerison, David. ``Single Variable Calculus." MIT OpenCourseWare, 1006, \url{https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/1.-differentiation/part-b-implicit-differentiation-and-inverse-functions/session-15-implicit-differentiation-and-inverse-functions/MIT18_01SCF10_Ses15b.pdf}.
 
-Larson, Ron, and Paul Battaglia. Calculus for AP: with CalcChat and CalcView. Cengage Learning, 2017.
+\bibitem{Larson2017}
+  Larson, Ron, and Paul Battaglia. Calculus for AP: with CalcChat and CalcView. Cengage Learning, 2017.
 
-Lowry-Duda, David. ``An Intuitive Overview of Taylor Series.” Mixedmath, 12 June 2019, \url{davidlowryduda.com/an-intuitive-overview-of-taylor-series/}.
+\bibitem{Loistl1976}
+  Loistl, Otto ``The Erroneous Approximation of Expected Utility by Means of a Taylor's Series Expansion: Analytic and Computational Results." American Economic Review, 1976.
 
-Palmer, Christine M. ``Taylor Series” Taylor Series, Worcester Polytechnic Institute, 30 Jan. 1998, \url{www.math.wpi.edu/Course_Materials/MA1023C98/taylor/node1.html}.
+\bibitem{Lowry-Duda2019}
+  Lowry-Duda, David. ``An Intuitive Overview of Taylor Series.” Mixedmath, 12 June 2019, \url{davidlowryduda.com/an-intuitive-overview-of-taylor-series/}.
 
-Strang, Gilbert, and Edwin Herman. ``Key Terms - Calculus Volume 2.” Calculus Volume 2, OpenStax, 30 Mar. 2016, \url{openstax.org/books/calculus-volume-2/pages/6-key-terms}.
+\bibitem{Palmer 1998}
+  Palmer, Christine M. ``Taylor Series” Taylor Series, Worcester Polytechnic Institute, 30 Jan. 1998, \url{www.math.wpi.edu/Course_Materials/MA1023C98/taylor/node1.html}.
 
-Weisstein, Eric W. ``Pi Formulas." From MathWorld--A Wolfram Web Resource. \url{http://mathworld.wolfram.com/PiFormulas.html}.
+\bibitem{Strang 2016}
+  Strang, Gilbert, and Edwin Herman. ``Key Terms - Calculus Volume 2.” Calculus Volume 2, OpenStax, 30 Mar. 2016, \url{openstax.org/books/calculus-volume-2/pages/6-key-terms}.
 
+\bibitem{Weisstein}
+  Weisstein, Eric W. ``Pi Formulas." From MathWorld--A Wolfram Web Resource. \url{http://mathworld.wolfram.com/PiFormulas.html}.
+\end{thebibliography}
 \end{document}
 
 

@@ -23,4 +23,4 @@
 \contentsline {section}{\numberline {8}Evaluation}{21}% 
 \contentsline {section}{\numberline {9}Exploration}{21}% 
 \contentsline {section}{\numberline {A}Appendix}{23}% 
-\contentsline {section}{\numberline {B}Works Cited}{24}% 
+\contentsline {section}{References}{24}% 
