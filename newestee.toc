@@ -22,5 +22,5 @@
 \contentsline {section}{\numberline {7}Comparison between terms and Ti-83}{21}% 
 \contentsline {section}{\numberline {8}Evaluation}{21}% 
 \contentsline {section}{\numberline {9}Exploration}{21}% 
-\contentsline {section}{\numberline {A}Appendix}{22}% 
-\contentsline {section}{\numberline {B}Works Cited}{23}% 
+\contentsline {section}{\numberline {A}Appendix}{23}% 
+\contentsline {section}{\numberline {B}Works Cited}{24}% 
