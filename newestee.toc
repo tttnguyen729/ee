@@ -19,8 +19,7 @@
 \contentsline {subsection}{\numberline {6.1}Modeling the toilet}{17}% 
 \contentsline {subsection}{\numberline {6.2}Finding the rate of change of volume}{18}% 
 \contentsline {subsection}{\numberline {6.3}Solving the related rate}{19}% 
-\contentsline {section}{\numberline {7}Comparison between terms and Ti-83}{21}% 
-\contentsline {section}{\numberline {8}Evaluation}{21}% 
-\contentsline {section}{\numberline {9}Exploration}{21}% 
+\contentsline {section}{\numberline {7}Evaluation}{21}% 
+\contentsline {section}{\numberline {8}Exploration}{21}% 
 \contentsline {section}{\numberline {A}Appendix}{23}% 
-\contentsline {section}{References}{24}% 
+\contentsline {section}{Works Cited}{24}% 
