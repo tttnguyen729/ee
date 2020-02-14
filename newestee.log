@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.6)  10 FEB 2020 22:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.2.6)  14 FEB 2020 13:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -833,34 +833,34 @@ LaTeX Warning: No \author given.
 <toilet.jpeg, id=70, 321.2pt x 240.9pt>
 File: toilet.jpeg Graphic file (type jpg)
 <use toilet.jpeg>
-Package pdftex.def Info: toilet.jpeg  used on input line 591.
+Package pdftex.def Info: toilet.jpeg  used on input line 599.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
  [17 <./toilet.jpeg>] [18] [19] [20] [21] [22] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 785--786
+Underfull \hbox (badness 10000) in paragraph at lines 796--797
 []\OT1/cmr/m/n/12 Jerison, David. ``Sin-gle Vari-able Cal-cu-lus." MIT Open-Cou
 rse-Ware,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 785--786
+Underfull \hbox (badness 10000) in paragraph at lines 796--797
 \OT1/cmr/m/n/12 2006, $\OT1/cmtt/m/n/12 https : / / ocw . mit . edu / courses /
  mathematics / 18 -[] 01sc -[] single -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 785--786
+Underfull \hbox (badness 10000) in paragraph at lines 796--797
 \OT1/cmtt/m/n/12 variable -[] calculus -[] fall -[] 2010 / 1. -[] differentiati
 on / part -[] b -[] implicit -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 785--786
+Underfull \hbox (badness 10000) in paragraph at lines 796--797
 \OT1/cmtt/m/n/12 differentiation -[] and -[] inverse -[] functions / session -[
 ] 15 -[] implicit -[]
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 794--795
+Underfull \hbox (badness 1681) in paragraph at lines 805--806
 \OT1/cmr/m/n/12 12 June 2019, $\OT1/cmtt/m/n/12 davidlowryduda . com / an -[] i
 ntuitive -[] overview -[] of -[] taylor -[]
  []
@@ -873,7 +873,7 @@ Here is how much of TeX's memory you used:
  39491 multiletter control sequences out of 15000+600000
  539639 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,12n,127p,862b,2118s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,12n,127p,866b,2118s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 bx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-d
@@ -884,7 +884,7 @@ s/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmtt12.pfb>
-Output written on newestee.pdf (25 pages, 199540 bytes).
+Output written on newestee.pdf (25 pages, 201163 bytes).
 PDF statistics:
  133 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream
