@@ -21,5 +21,5 @@
 \contentsline {subsection}{\numberline {6.3}Solving the related rate}{19}% 
 \contentsline {section}{\numberline {7}Evaluation}{21}% 
 \contentsline {section}{\numberline {8}Exploration}{21}% 
-\contentsline {section}{\numberline {A}Appendix}{23}% 
+\contentsline {section}{\numberline {A}Python Program}{23}% 
 \contentsline {section}{Works Cited}{24}% 
