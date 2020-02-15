@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {6}Related Rates Problem}{17}% 
 \contentsline {subsection}{\numberline {6.1}Modeling the toilet}{17}% 
 \contentsline {subsection}{\numberline {6.2}Finding the rate of change of volume}{18}% 
-\contentsline {subsection}{\numberline {6.3}Solving the related rate}{20}% 
+\contentsline {subsection}{\numberline {6.3}Solving the related rate}{19}% 
 \contentsline {section}{\numberline {7}Evaluation}{21}% 
 \contentsline {section}{\numberline {8}Exploration}{21}% 
 \contentsline {section}{\numberline {A}Appendix}{23}% 

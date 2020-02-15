@@ -10,8 +10,9 @@
 \usepackage{float}
 \usepackage[hyphens,spaces,obeyspaces]{url}
 \usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage{subfig}
 \renewcommand\refname{Works Cited}
-\date{\normalsize May 2020 \\ Mathematics \\ Word Count: 3451}
+\date{\normalsize May 2020 \\ Mathematics \\ Word Count: 3601}
 \title{\normalsize The Application of a Taylor Series Approximation for \(\pi\) in a Related Rates Problem using a Solid of Revolution. \bigskip \\  How well can Taylor series approximations for \(\pi\) be applied in rates of change of cyclical objects?}
 
 \begin{document}
@@ -61,9 +62,7 @@ The series was derived from the general formula of a Taylor series.
   \sum_{n=0}^{\infty} \frac{f^{(n)}(c)}{n!} \, (x-c)^{n} = f(c) + f'(c)(x-c) + ... +  \frac{f^{(n)}(c)}{n!}
 \end{equation*}
 
-``Centering the Taylor series at the point c = 0 results in a Maclaurin series" (Larson 2017, 586). Since the derivative of \(e^{x}\) is \(e^{x}\), \(f^{(n)}(0) = 1\) for all \(n\).
-
-The series simplifies to:
+``Centering the Taylor series at the point c = 0 results in a Maclaurin series" (Larson 2017, 586). Since the derivative of \(e^{x}\) is \(e^{x}\), \(f^{(n)}(0) = 1\) for all \(n\). The series simplifies to:
 \begin{equation*}
   \sum_{n=0}^{\infty} \frac{x^{n}}{n!}
 \end{equation*}
@@ -73,7 +72,7 @@ To approximate \(e\) using the Taylor series, let \(P(n)\) be a polynomial of nt
 	P(n) = \sum_{n=0}^{n} \frac{x^{n}}{n!} \approx e
 \end{equation*}
 
-Using a first order or linear approximation with the polynomial \(P(1) = 1 + x\):
+Using a first order or linear approximation with the polynomial \(P_{1}(x) = 1 + x\):
 \begin{figure}[H]
 \centering
     \caption[]{\(y=e^x\) and first order approximation}
@@ -81,7 +80,7 @@ Using a first order or linear approximation with the polynomial \(P(1) = 1 + x\)
 \begin{axis}
     [xmin=-5,
     ]
-    \node [color=blue, smooth, ultra thick, font=\Large] at (2,15) {$P(x)=1+x$};
+	\node [color=blue, smooth, ultra thick, font=\Large] at (2,15) {$P_{1}(x)=1+x$};
     \node [color=blue, smooth, ultra thick, font=\Large] at (4,150) {$y=e^x$};
     \addplot[color=orange]{e^x};
     \addplot[color=orange]{1+x};
@@ -91,11 +90,11 @@ Using a first order or linear approximation with the polynomial \(P(1) = 1 + x\)
 
 Not only can Taylor polynomials be used to approximate irrational numbers graphically, they can also approximate numerically. This can be done by plugging an \(x\) value into the Taylor polynomial. Plugging in \(x = 1\) into the function of \(e^x\) will  approximate \(e^1\) or \(e\). 
 
-First, the first order approximation is \(P(x) = 1 + x\). Plugging in 1 into the Taylor polynomial, \(T(1) = 1 + 1 = 2\). Let it be noted that the Ti-83 approximates \(e\) as \(2.718281828\).
+Plugging in \(x = 1\) into the first order Taylor polynomial, \(P_{1}(x) = 1 + x\), results in \(P_{1}(1) = 1 + 1 = 2\). Let it be noted that the Ti-83 approximates \(e\) as \(2.718281828\).
 
 Using a second order approximation:
 \begin{equation*}
-  P(2) = \sum_{n=0}^{2} \dfrac{x^{n}}{n!} = 1 + x + \dfrac{x^{2}}{2!}:
+	P_{2}(x) = \sum_{n=0}^{2} \dfrac{x^{n}}{n!} = 1 + x + \dfrac{x^{2}}{2!}
 \end{equation*}
 
 \begin{figure}[H]
@@ -107,15 +106,15 @@ Using a second order approximation:
     ]
 \addplot[color=orange]{e^x};
 \addplot[color=orange]{1+x+(x^2)/2};
-    \node [color=blue, smooth, ultra thick, font=\Large] at (0,15) {$y=1+x + \frac{x^2}{2!}$};
+	\node [color=blue, smooth, ultra thick, font=\Large] at (5,40) {$P_{2}(x)$};
     \node [color=blue, smooth, ultra thick, font=\Large] at (4,150) {$y=e^x$};
 \end{axis}
 \end{tikzpicture}
 \end{figure}
 
-Higher order approximations are more accurate than lower order approximations, in this case the second approximation is more accurate than the first and thus matches the curve of the function \(f(x) = e^{x}\) more accurately. The second order approximation for \(e^{x}\) is \(T(x) = 1 + x + \dfrac{x^2}{2!}\). Plugging in 1 into the Taylor polynomial \(T(1) = 1 + 1 + 0.5 = 2.5\). As shown by the graph and numerical value of error, the function approximation gets closer to the value of e as more terms are added.
+Higher order approximations are more accurate than lower order approximations, in this case the second approximation is more accurate than the first and thus matches the curve of the function \(f(x) = e^{x}\) more accurately. The second order approximation for \(e^{x}\) is \(P_{2}(x) = 1 + x + \dfrac{x^2}{2!}\). Plugging in 1 into the Taylor polynomial \(P_{2}(1) = 1 + 1 + 0.5 = 2.5\). As shown by the graph and numerical value of error, the function approximation gets closer to the value of e as more terms are added.
 
-Using a third order approximation of \(P(3) = 1 + x + \dfrac{x^{2}}{2!} + \dfrac{x^{3}}{3!}\):
+Using a third order approximation of \(P_{3}(x) = 1 + x + \dfrac{x^{2}}{2!} + \dfrac{x^{3}}{3!}\):
 \begin{figure}[H]
 \centering
     \caption[]{\(y=e^x\) and third order approximation}
@@ -123,7 +122,7 @@ Using a third order approximation of \(P(3) = 1 + x + \dfrac{x^{2}}{2!} + \dfrac
 \begin{axis}
     [xmin=-5,
     ]
-    \node [color=blue, smooth, ultra thick, font=\Large] at (1,-10) {$y=1+x + \frac{x^2}{2!} + \frac{x^3}{3!}$};
+	\node [color=blue, smooth, ultra thick, font=\Large] at (5,15) {$P_{3}(x)$};
     \node [color=blue, smooth, ultra thick, font=\Large] at (4,150) {$y=e^x$};
     \addplot[color=orange]{e^x};
     \addplot[color=orange]{1+x+(x^2)/2+(x^3)/6};
@@ -142,16 +141,16 @@ An 8 term approximation is strikingly similar to the graph of \(y = e^{x}\)
 \addplot[color=orange]{e^x};
 \addplot[color=orange]{1+x+(x^2)/2+(x^3)/6+(x^4)/24+(x^5)/120+(x^6)/720+(x^7)/5040+(x^8)/40320};
 \node [color=blue, smooth, ultra thick, font=\Large] at (4,150) {$y=e^x$};
+	\node [color=blue, smooth, ultra thick, font=\Large] at (4.5,15) {$P_{8}(x)$};
 \end{axis}
 \end{tikzpicture}
 \end{figure}
 
-An eighth order approximation for is T(x) = 1 + x + \(\dfrac{x^2}{2!}\) + \(\dfrac{x^3}{3!}\)
-+ \(\dfrac{x^4}{4!}\) + \(\dfrac{x^5}{5!}\) + \(\dfrac{x^6}{6!}\) + \(\dfrac{x^7}{7!}\) + \(\dfrac{x^8}{8!}\)
+An eighth order approximation for is \(P_{8}(x) = 1 + x + \dfrac{x^2}{2!} + \dfrac{x^3}{3!} + \dfrac{x^4}{4!} + \dfrac{x^5}{5!} + \dfrac{x^6}{6!} + \dfrac{x^7}{7!} + \dfrac{x^8}{8!}\)
 
 Plugging in 1 into the 8th degree Taylor polynomial:
 \begin{equation*}
-  1 + 1 + \dfrac{1^2}{2!} + \dfrac{1^3}{3!} + \dfrac{1^4}{4!} + \dfrac{1^5}{5!} + \dfrac{1^6}{6!} + \dfrac{1^7}{7!} + \dfrac{1^8}{8!} \approx 2.71827877
+	P_{8}(1) = 1 + 1 + \dfrac{1^2}{2!} + \dfrac{1^3}{3!} + \dfrac{1^4}{4!} + \dfrac{1^5}{5!} + \dfrac{1^6}{6!} + \dfrac{1^7}{7!} + \dfrac{1^8}{8!} \approx 2.71827877
 \end{equation*}
 
 This value is substantially closer to the value of e than the previous approximations. The two functions are almost indistinguishable on the domain \([0,5]\). As more terms are included in the approximation, the approximation begins to resemble the function approximated more accurately. ``In fact, a Taylor series with infinite terms would converge to the exact value of \(\pi\)" (Jerison 2006). In this way, Taylor series could prove to be a useful way to approximate \(\pi\). As such, I predict that the Taylor series derived will be more accurate than the approximation of the Ti-83 calculator in accuracy with a reasonable number of terms.
@@ -186,10 +185,11 @@ The first derivative of arctan(x) is
 f'(x) = \frac{1}{1 + x^{2}}
 \end{equation*}
 
-\pagebreak
+\newpage
 According to Jerison, the derivative of \(y = arctan(x)\) can be derived with the following triangle using basic trigonometry and calculus (Jerison 2006).
 \begin{figure}[H]
 \centering
+	\caption{\(arctan(x)\) triangle}
 \begin{tikzpicture}
 \draw (0,0)
   -- (4,0) 
@@ -466,7 +466,7 @@ These both pass the alternating series test as the limit of their nth term is ze
 \section{Finding Error of Approximations}
 The more accurate an approximation needs to be, the more terms will be needed in the Taylor polynomial. However, this is a more difficult task than just plugging in values into the derived Taylor polynomial because the goal is to figure out just how accurate or long the Taylor polynomial needs to be to reach a certain level of accuracy.
 
-According to Christine Palmer, ``\(f(x) = Tn(x) + Rn(x)\)" where \(Tn(x)\) is the approximation and \(Rn(x)\) is error (Palmer 1998). However, solving for \(Rn(x)\) directly would not be beneficial because \(f(x)\) is irrational and would result in another approximation.
+According to Christine Palmer, ``\(f(x) = T_{n}(x) + R_{n}(x)\)" where \(T_{n}(x)\) is the approximation and \(R_{n}(x)\) is error (Palmer 1998). However, solving for \(R_{n}(x)\) directly would not be beneficial because \(f(x)\) is irrational and would result in another approximation.
 According to Calculus for AP, ``If a convergent alternating series satisfies the condition \(a_{n+1} \leq a_{n} \), then the absolute value of the remainder \(R_{n}\) involved in approximating the sum \(S\) by \(S_{n}\) is less than (or equal to) the first neglected term" (Larson 2017, 569).
 \begin{equation*}
   \abs{S - S_{n}} = \abs{R_{n}} \leq a_{n + 1}
@@ -475,92 +475,116 @@ According to Calculus for AP, ``If a convergent alternating series satisfies the
 This concept allows us to figure out how many terms are needed to beat the Ti-83 calculator's approximation.
 
 \subsection{Alternating Series Remainder}
-The Taylor approximation for \(\pi\) is:
+A Taylor approximation for \(\pi\) where \(n\) is the index and \(n + 1\) is how many terms the approximation uses:
 \begin{equation*}
-  \pi = 4\sum_{n=0}^{x}{ \frac{(-1)^n}{2n+1}}
+	P(x) = 4 \sum_{n=0}^{n} (-1)^{n} \frac{x^{2n+1}}{2n+1} \approx \pi
+\end{equation*}
+
+Plugging in \(x = 1\)
+\begin{equation*}
+	P(1) = 4\sum_{n=0}^{n}{ \frac{(-1)^n}{2n+1}} \approx \pi 
 \end{equation*}
 
 The approximation using only one term is:
 \begin{equation*}
-  P(0) = 4 \cdot \frac{1}{1} = 4
+	P_{0}(x) = 4 \cdot x = 4x
+\end{equation*}
+
+\begin{equation*}
+	P_{0}(1) = 4(1) = 4
 \end{equation*}
 
 It is possible to find the error by taking the absolute value of  the subtraction of the actual value of \(\pi\) by the approximation, in this case \(P(0) = 4\). However, this is problematic as \(\pi\) is an irrational number that is being approximated in the first place. Instead, the error of the approximation can be found by using the Alternating Series Remainder.
 
-The Alternating Series Remainder is the value of the next unused term.
-
-The error of the first approximation using the next unused term is:
+As noted earlier, the Alternating Series Remainder is the value of the next unused term. The error of the first approximation using the next unused term is:
 \begin{equation*}
-  \abs{R(0)} \leq \abs{\frac{-4}{3}} \leq \frac{4}{3}
+	\abs{R_{0}(1)} \leq \abs{\frac{-4}{3}} \leq \frac{4}{3}
 \end{equation*}
 
 To continue, a two term approximation of \(\pi\) is:
-
 \begin{equation*}
-  P(1) = 4 \cdot (\frac{1}{1} - \frac{1}{3}) = \frac{8}{3} 
+	P_{1}(x) = 4 \cdot (x - \frac{x}{3}) 
 \end{equation*}
 
-And this approximation has an error of:
 \begin{equation*}
-  R(1) \leq  \abs{4 \cdot {\frac{(-1)^n}{2(2)+1}}} = \frac{4}{5} = 0.8
+	P_{1}(1) = 4 \cdot (\frac{1}{1} - \frac{1}{3}) = \frac{8}{3} \approx 2.6667
+\end{equation*}
+
+And this two term approximation has an error of:
+\begin{equation*}
+	R_{1}(1) \leq  \abs{4 \cdot {\frac{(-1)^n}{2(2)+1}}} = \frac{4}{5} = 0.8
 \end{equation*}
 
 \begin{figure}[H]
 \centering
-    \caption[]{f(x) = arctan(x) and two term approximation}
+	\caption[]{\(f(x) = 4 \,arctan(x)\) and two term approximation}
 \begin{tikzpicture}
 \begin{axis}
     [xmin=-5,
     ]
-    \addplot[color=orange]{rad(atan(x))};
-    \addplot[color=orange]{x - (x^3)/3}; 
-    \node [color=blue, smooth, ultra thick, font=\Large] at (3,-30) {$P_{2}(x)$};
-    \node [color=blue, smooth, ultra thick, font=\Large] at (2,10) {$y=tan^{-1}(x)$};
+    \addplot[color=orange]{4 * rad(atan(x))};
+    \addplot[color=orange]{4 * (x - (x^3)/3)}; 
+    \node [color=blue, smooth, ultra thick, font=\Large] at (3,-100) {$P_{1}(x)$};
+    \node [color=blue, smooth, ultra thick, font=\Large] at (2,25) {$y=4\,tan^{-1}(x)$};
 \end{axis}
 \end{tikzpicture}
 \end{figure}
 
-A ninth order approximation or five term approximation has an error of 
+A five term approximation of \(\pi\) is:
+\begin{equation*}
+	P_{4}(x) = 4 \cdot (x - \frac{x}{3} + \frac{x}{5} - \frac{x}{7} + \frac{x}{9}) 
+\end{equation*}
+
+\begin{equation*}
+	P_{4}(1) = 4 \cdot (1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9}) \approx 3.3397
+\end{equation*}
+
+A five term approximation has an error of: 
+\begin{equation*}
+	R_{4}(1) \leq  \abs{4 \cdot {\frac{(-1)^n}{2(5)+1}}} = \frac{4}{11} \approx 0.3636
+\end{equation*}
+
 \begin{figure}[H]
 \centering
-    \caption[]{f(x) = arctan(x) and ninth order approximation}
+	\caption[]{\(f(x) = 4 \,arctan(x)\) and 5 term approximation}
 \begin{tikzpicture}
 \begin{axis}
     [xmin=-5,
     ]
-\addplot[color=orange]{rad(atan(x))};
-\addplot[color=orange]{x - (x^3)/3 + (x^5)/5 - (x^7)/7 + (x^9)/9};
-\node [color=blue, smooth, ultra thick, font=\Large] at (3,2 * 10^5) {$P_{9}(x)$};
-    \node [color=blue, smooth, ultra thick, font=\Large] at (2,-10^5) {$y=tan^{-1}(x)$};
+	\addplot[color=orange]{4 * (rad(atan(x)))};
+	\addplot[color=orange]{4 * (x - (x^3)/3 + (x^5)/5 - (x^7)/7 + (x^9)/9)};
+\node [color=blue, smooth, ultra thick, font=\Large] at (3,5 * 10^5) {$P_{4}(x)$};
+    \node [color=blue, smooth, ultra thick, font=\Large] at (2.5,-11^5) {$y=4 \,tan^{-1}(x)$};
 \end{axis}
 \end{tikzpicture}
 \end{figure}
 
 As seen prior, the Taylor series gets more accurate the more terms it uses. It is important to note that the approximation can be either an over approximation or under approximation because the approximation is an alternating series. According to Lowry-Duda, ``the graph of the original function subtracted by the Taylor polynomial can be used as a graphical representation of error" (Lowry-Duda 2019). This is another way to visually see the difference between the ninth order and two term approximation of \(arctan(x)\). 
 
-\begin{figure}[H]
+\begin{figure}[H]%
 \centering
-    \caption[]{error of two term approximation}
-\begin{tikzpicture}
+		\caption{Error Graphs}
+	\subfloat[error of two term approximation]{{
+		\begin{tikzpicture}[scale=.75]
 \begin{axis}
     [xmin=-5,
     ]
-\addplot[color=orange]{rad(atan(x)) - x + (x^3)/3};
+	\addplot[color=orange]{4 * (rad(atan(x))) - 4*(x + (x^3)/3)};
 \end{axis}
 \end{tikzpicture}
+		}}%
+	\qquad
+	\subfloat[error of five term approximation] {{
+		\begin{tikzpicture}[scale=.75]
+\begin{axis}
+    [xmin=-5,
+    ]
+	\addplot[color=orange]{4 * (rad(atan(x))) - 4 * (x + (x^3)/3 - (x^5)/5 + (x^7)/7 - (x^9)/9)};
+\end{axis}
+\end{tikzpicture}
+		}}%
 \end{figure}
 
-\begin{figure}[H]
-\centering
-    \caption[]{error of ninth order approximation}
-\begin{tikzpicture}
-\begin{axis}
-    [xmin=-5,
-    ]
-\addplot[color=orange]{rad(atan(x)) - x + (x^3)/3 - (x^5)/5 + (x^7)/7 - (x^9)/9};
-\end{axis}
-\end{tikzpicture}
-\end{figure}
 
 The graph of the error of the ninth order approximation is closer to zero on a larger domain than the graph of the error of the two term approximation. This is further evidence that a Taylor series gets more accurate as more terms are added.
 
@@ -586,7 +610,7 @@ It is difficult to even determine how many terms in the Taylor series is necessa
 \subsection{More reasonable approximations}
 A Taylor series with 2 terms has an error of less than or equal to 0.8.
 
-Expanding the Taylor approximation to 12 terms reduces the error to less than or equal to 0.16. This is about as effective as approximating \(\pi\) as 3.
+Expanding the Taylor approximation to 12 terms reduces the error to less than or equal to 0.16. This is about as effective as approximating \(\pi\) as 3 which has an error around .1415926536.
 
 To get an approximation better than 3.14 or have an error less than or equal to 0.01, 199 terms are needed. 
 
@@ -596,7 +620,7 @@ A toilet bowl is being filled with water at a constant rate. At what rate is the
 \subsection{Modeling the toilet}
 \begin{figure}[H]
 \centering
-  \includegraphics[angle=270]{toilet.jpeg}
+  \includegraphics[angle=270, scale=.75]{toilet.jpeg}
     \caption{The toilet examined.}
 \end{figure}
 
@@ -633,11 +657,11 @@ Applying the first fundamental theorem of Calculus.
 \subsection{Finding the rate of change of volume}
 In order to find the rate at which the volume of water flows into the toilet, the volume of a toilet as well as how long it takes the toilet to flush will need to be calculated. 
 
-\pagebreak
 The toilet in my school's bathroom uses \(13.2 \; L\) per flush. With this information, another assumption is that after the toilet finishes flushing, it will hold \(13.2 \, L\) of water. This oversimplification of the problem is just to illustrate the use of a Taylor series. Using a stopwatch, I averaged how long it takes for twenty toilet flushes. The timer started as soon as the toilet bowl emptied and stopped when water stopped filling the bowl to measure the rate at which the height of water is rising.
 
 \begin{figure}[H]
 \begin{center}
+	\caption{Flush times}
 \begin{tabular}{rr}
 Flush & Time (s \(\pm\) 0.01s)\\
 \hline
@@ -662,7 +686,6 @@ Flush & Time (s \(\pm\) 0.01s)\\
 19 & 16.51\\
 20 & 15.48\\
 \end{tabular}
-	\caption{Flush times}
 \end{center}
 \end{figure}
 
@@ -767,9 +790,9 @@ According to Weisstein, ``there are series that even converge directly to \(\pi\
 
 These function functions, although more accurate than the Gregory-Leibniz series used in the research investigation, were not used due to their complex nature. The first series requires knowledge on the Riemann zeta function and the second was not used due to the complexity of its derivation.
 
-Word Count: 3451
+Word Count: 3601
 
-\pagebreak
+\newpage
 \begin{appendix}
 \section{Appendix}
 \begin{verbatim}
